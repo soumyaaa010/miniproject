@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* ************************* */
+/* GLOBAL STYLE */
+/* ************************* */
+.max-width{
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 3.6rem 0 2.6rem;
+}
+.heading-primary{
+    font-size: 4.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
+.heading-primary,
+.heading-secondary,
+.heading-tertiary{
+    font-weight: 600;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+.heading-secondary{
+    font-size: 3.6rem;
+    margin: 1.6rem 0;
+}
+.vl{
+    border-left: 0.3rem solid #73221a;
+    height: 5rem;
+}
+
+/* ************************* */
+/* HEADER */
+/* ************************* */
+
+.menu_bar{
+    position: fixed;
+    background-color: #c0392b;
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    z-index: 999;
+}
+.logo{
+    width: 20rem;
+}
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.menu_bar ul li{
+    padding: 0.5rem 1.5rem;
+    position: relative;
+}
+.menu_bar ul li a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    /* font-weight: 500; */
+    color: beige;
+    transition:all 0.2s ;
+}
+.menu_bar ul li a:hover{
+    color: #260b09;
+}
+.fs-caret-down{
+    height: 2px;
+    width: 1px;
+    color: rgb(255, 255, 255);   
+}
+
+.dropdown_menu,
+.dropdown_menu2{
+    display: none;
+}
+.menu_bar ul li:hover .dropdown_menu,
+.menu_bar ul li:hover .dropdown_menu2{
+    display: block;
+    position: absolute;
+    text-align: start;
+    left: 0;
+    background-color: #c0392b;
+}
+.menu_bar ul li:hover .dropdown_menu ul,
+.menu_bar ul li:hover .dropdown_menu2 ul{
+    display: block;
+    margin: 1rem;
+}
+.menu_bar ul li:hover .dropdown_menu ul li,
+.menu_bar ul li:hover .dropdown_menu2 ul li{
+    width: 15rem;
+    padding: 1rem;
+}
+
+/* ************************* */
+/* SECTION INFORMATION */
+/* ************************* */
+.information{
+    top: 10rem;
+    padding: 9.6rem 0 1.2rem;
+}
+.info-text{
+    max-width: 110rem;
+    margin: 0 auto;
+}
+.text{
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+/* ************************* */
+/* SECTION CONTACT-INFO */
+/* ************************* */
+.head-sec{
+    padding-top: 3.2rem;
+}
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.person-name{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000;
+}
+.contact,
+.shift{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #111;
+}
+/* ************************* */
+/* SECTION COMPLAIN FORM*/
+/* ************************* */
+.form-box{
+    max-width: 110rem;
+    background: linear-gradient(
+      135deg,
+      hsla(6, 64%, 53%, 0.886),
+      hsla(227, 72%, 32%, 0.607)
+    );
+    margin: 7rem auto ;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+    overflow: hidden;
+}
+/* .form-box .active{
+ background-color: #fff;
+} */
+form{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.complain-form h2{
+    font-family: "Antino", sans-serif;
+    margin-bottom: .5rem;
+}
+input{
+    font-size: 1.8rem;
+    width: 50rem;
+    height: 3rem;
+    margin-top: 2rem;
+}
+.complain-form .input-box{
+    margin-top: 1px;
+    font-size: 3.5rem;
+}
+.input-box input {
+    margin: 15px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+#message {
+    width: 50rem;
+    font-size: 1.8rem;
+    border: none;
+    border: 1px solid #333;
+    outline: none;
+    resize: vertical;
+}
+
+textarea {
+    max-width: 100%;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+
+#society-name{
+    width:50rem;
+    height: 4rem;
+    margin: 10px 0 10px;
+    font-size: 17px;
+}
+
+#block{
+    width:25rem ;
+    height: 4rem;
+    margin: 10px 0 10px;
+    font-size: 17px;
+    position:static ;
+}
+.house{
+    display: flex;
+    flex-direction: row;
+    width:50rem ;
+    height: 4rem;
+    margin: 10px 0 10px;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: center;
+}
+.house input{
+    width: 25rem;
+}
+.btn{
+    width: 50rem;
+    height: 2rem;
+    background:#c8e1e4;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 1rem 0 4rem;
+    font-size: 2.4rem ;
+    border-radius: 12px;
+    border: none;
+}
+.btn:hover{
+    background:#ffffff;
+    color: rgb(0, 0, 0);
+}
+.pop-up{
+    width: 50rem;
+    height: 35rem;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 3rem 3rem;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 170%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.img-tick{
+    height: 25rem;
+    width: 25rem;
+    margin-bottom: 0;
+    margin-top: -12rem;
+    box-shadow: 0 0px 0 px rgba(0, 0, 0, 0.2);
+}
+.heading-tick{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 1.2rem;
+}
+.tick-text{
+    font-size: 1.8rem;
+    line-height: 2;
+
+}
+.ok-btn{
+    margin-top: 1.8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 5rem;
+    width: 10rem;
+    border-radius: 3px;
+    border: none;
+    /* background-color: hsla(204, 70%, 53%, 0.537); */
+    background-color: hsla(104, 63%, 56%, 0.782);
+    cursor: pointer;
+}
+.ok-btn:hover{
+    background-color: #d4d7db94;
+}
+/* ************************* */
+/* SECTION FAQ*/
+/* ************************* */
+.faq{
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing:1px;
+    border: 0.1rem solid transparent;
+    /* border-radius: 10px; */
+    margin: 2rem 0 0;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+h2{
+    margin-top: 50px 0 50px;
+    padding: 20px 0 40px;
+    text-align: center;
+    font-family: "Antino", sans-serif;
+    letter-spacing: 2px;
+}
+.box{
+    background-color: #f0f0f0;
+    max-width: 80rem;
+    margin: 1rem auto 3rem;
+    border: 0.1rem solid #9fa4a8;
+    border-radius: 10px;
+}
+.faq .active{
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+}
+.faq .active::before,
+.faq .active::after{
+    content: "\f075";
+    font-family:"Font Awesome 5 Free";
+    color: #2ecc71;
+    font-size: 8rem;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    opacity: 0.2;
+    z-index: 0;
+}
+.faq .active::before{
+    color: #3498db;
+    top: -1rem;
+    left: -3rem;
+    transform: rotateY(180deg);
+}
+.faq-question{
+    margin: 0 3.5rem 0 0 ;
+    font-size: 2rem;
+}
+.faq-answer{
+    font-size: 2rem;
+    display: none;
+    margin: 3rem 0 0;
+}
+.faq .active .faq-answer{
+    display: block;
+}
+.faq-toggle{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: 0;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    height: 3rem;
+    width: 3rem;
+}
+.faq-toggle .fa-xmark{
+    display: none;
+}
+.faq .active .faq-toggle .fa-xmark{
+    display: block;
+}
+.faq .active .faq-toggle .fa-caret-down{
+    display: none;
+}
+
+/* ************************* */
+/* FOOTER */
+/* ************************* */
+.ter{
+    padding-top: 5rem;
+}
+footer{
+    height: 45vh;
+    background-color: rgb(16, 16, 16);
+}
+.footer{
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+
+.footer h3{
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    color: #c0392b;
+    font-size: 1.8rem;
+}
+.about-us,
+.quick-link,
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.about-us a,
+.quick-link a,
+.contact-us a{
+    text-decoration: none;
+    color: rgb(137, 135, 135);
+    font-size: 1.6rem;
+}
+.about-us a:hover,
+.quick-link a:hover,
+.contact-us a:hover{
+    color: white;
+}
+.footer .contact-us{
+    gap: 2vh;
+    max-width: 30vw;
+}
+.footer .contact-us p{
+    align-items: flex-start;
+}
+.footer .contact-us a{
+    text-align: left;
+}
+.footer .sm-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.copyright p{
+    color: rgb(137, 135, 135);
+}
+.content-area .copyright p{
+    padding: 0;
+}
+

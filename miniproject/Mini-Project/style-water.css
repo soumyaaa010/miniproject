@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+/* Header and logo*/
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+/*
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+.wrapper p{
+    margin: 1.5%;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #c0392b;
+    position: fixed; 
+    margin-top: 0%;
+  
+}
+.logo{
+    height: 10%;
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 80px;
+    margin-left: 5%;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    letter-spacing: 4px;
+    
+}
+nav{
+    float: right;
+    line-height: 80px;
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 23px;
+    color: beige;
+    padding: 36px;
+    text-align: center;
+}
+
+nav a:hover{
+    color: black;
+}*/
+.menu_bar{
+    position: fixed;
+    background-color: #c0392b;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+.logo{
+    width: 200px;
+}
+.logo a{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    letter-spacing: 4px;
+}
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.menu_bar ul li{
+    padding: 5px 15px;
+    position: relative;
+}
+.menu_bar ul li a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: beige;
+    transition:all 0.2s ;
+}
+.menu_bar ul li a:hover{
+   
+    color: black;
+}
+.fs-caret-down{
+    height: 2px;
+    width: 1px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.dropdown_menu{
+    display: none;
+}
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: #c0392b;
+}
+.menu_bar ul li:hover .dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+.menu_bar ul li:hover .dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+}
+.dropdown_menu2{
+    display: none;
+}
+.menu_bar ul li:hover .dropdown_menu2{
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: #c0392b;
+}
+.menu_bar ul li:hover .dropdown_menu2 ul{
+    display: block;
+    margin: 10px;
+}
+.menu_bar ul li:hover .dropdown_menu2 ul li{
+    width: 150px;
+    padding: 10px;
+}
+/* Content*/
+.content-area{
+    position: static;
+}
+.wrapper-down{
+    margin: 0 5vw 15vh;
+    line-height: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper-down h1{
+    padding-top: 120px;
+    font-family: "Antino", sans-serif;
+    letter-spacing: 2px;
+}
+.wrapper-down .text{
+    text-align: justify;
+    width: 80vw;
+}
+
+.text{
+    font-size: 18px;
+    font-weight: 400;
+}
+.contact-details{
+    margin-bottom: 48px;
+    margin-top: 0;
+    padding: 0;
+}
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+.detail .person-name{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.detail .contact,
+.detail .shift{
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+}
+form{
+    width: 60%;
+    margin: 0 auto 5vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.complain-form h2{
+    font-size:30px ;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.complain-form .input-box{
+    position:static ;
+    width: 60%;
+    margin-top: 10px;
+    font-size: 35px;
+}
+.complain-form .input-box input {
+    width: 100%;
+    padding: 20px 0 10px;
+    font-size: 18px;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+.complain-form .input-box input #message {
+    width: 100%;
+    padding:20px 0 10px;
+    font-size: 18px;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    resize: vertical;
+}
+.complain-form .input-box input[type="submit"]{
+    width: 35vw;
+    background:#c8e1e4;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 25px ;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+#society-name{
+    width:60% ;
+    height: 5vh;
+    margin: 10px 0 10px;
+    font-size: 17px;
+    position:static ;
+}
+
+#block{
+    width:60% ;
+    height: 5vh;
+    margin: 10px 0 10px;
+    font-size: 17px;
+    position:static ;
+}
+.house{
+    display: flex;
+    flex-direction: row;
+    width:60% ;
+    height: 5vh;
+    margin: 10px 0 10px;
+    font-size: 17px;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+#flat-no{
+    margin: 10px 0 10px;
+    font-size: 17px;
+    position:static ;
+    margin: 0 0 10px;
+}
+/* FAQ*/
+.faq{
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing:1px;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 20px 0 0;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+h2{
+    margin-top: 50px 0 50px;
+    padding: 20px 0 40px;
+    text-align: center;
+    font-family: "Antino", sans-serif;
+    letter-spacing: 2px;
+}
+.faq-container{
+    max-width: 50vw;
+    margin: 0 auto;
+    background-color: transparent;
+}
+.faq .active{
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6 px rgba(0,0,0,0.1);
+}
+.faq .active::before,
+.faq .active::after{
+    content: "\f075";
+    font-family:"Font Awesome 5 Free";
+    color: #2ecc71;
+    font-size: 80px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    opacity: 0.2;
+    z-index: 0;
+}
+.faq .active::before{
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+.faq-question{
+    margin: 0 35px 0 0 ;
+}
+.faq-answer{
+    display: none;
+    margin: 30px 0 0;
+}
+.faq .active .faq-answer{
+    display: block;
+}
+.faq-toggle{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+.faq-toggle .fa-xmark{
+    display: none;
+}
+.faq .active .faq-toggle .fa-xmark{
+    display: block;
+}
+.faq .active .faq-toggle .fa-caret-down{
+    display: none;
+}
+/* Footer*/
+
+footer{
+    height: 45vh;
+    background-color: rgb(16, 16, 16);
+}
+.footer{
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+    
+}
+.footer h4{
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    color: #c0392b;
+}
+.footer .about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;   
+}
+.footer .about-us a{
+    text-decoration: none;
+    color: rgb(137, 135, 135);
+}
+.footer .about-us a:hover{
+    color: white;
+}
+.footer .quick-link{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;   
+}
+.footer .quick-link a{
+    text-decoration: none;
+    color: rgb(137, 135, 135);
+}
+.footer .quick-link a:hover{
+    color: white;
+}
+.footer .contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vh;
+    max-width: 30vw;
+}
+.footer .contact-us p{
+    align-items: flex-start;
+}
+.footer .contact-us h4{
+    padding-top: 6vh;   
+}
+.footer .contact-us a{
+    text-decoration: none;
+    color: rgb(137, 135, 135);
+    text-align: left;
+}
+.footer .contact-us a:hover{
+    color: white;
+}
+.footer .sm-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.copyright p{
+    color: rgb(137, 135, 135);
+}
+.content-area .copyright p{
+    padding: 0;
+}
